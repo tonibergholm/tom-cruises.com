@@ -18,7 +18,7 @@ jobs:
           script: |
             set -e
             cd /home/toni/apps/tom-cruises
-            git pull origin main
+            git pull https://github.com/tonibergholm/tom-cruises.com.git main
             npm ci --omit=dev
             npm run build
             pm2 reload tom-cruises --update-env
