@@ -17,7 +17,7 @@ jobs:
           key: ${{ secrets.SSH_DEPLOY_KEY }}
           script: |
             set -e
-            cd /var/www/tom-cruises.com
+            cd /home/toni/apps/tom-cruises
             git pull origin main
             npm ci --omit=dev
             npm run build
