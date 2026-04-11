@@ -1,0 +1,141 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #004466;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+nav a {
+  color: #cce7ff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+}
+
+.welcome {
+  background: #e6f0f7;
+  border-left: 6px solid #004466;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #00334d;
+}
+
+.welcome h2 {
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.welcome p {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.yacht-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.yacht-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  transition: transform 0.2s ease;
+}
+
+.yacht-card:hover {
+  transform: translateY(-5px);
+}
+
+.yacht-card h2 a {
+  color: #004466;
+  text-decoration: none;
+}
+
+.yacht-card h2 a:hover {
+  text-decoration: underline;
+}
+
+.yacht-details {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+}
+
+.yacht-details h2 {
+  margin-bottom: 1rem;
+  color: #004466;
+}
+
+.yacht-details ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.yacht-details ul li {
+  padding: 0.3rem 0;
+  font-weight: 600;
+}
+
+footer {
+  background: #004466;
+  color: #cce7ff;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  nav a {
+    margin: 0 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
