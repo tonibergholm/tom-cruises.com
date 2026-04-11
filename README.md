@@ -1,6 +1,6 @@
 # Tom Cruises - Yacht Tracking & Stories CMS
 
-A complete Next.js 14 content management system for tracking and sharing stories about two beautiful sailing yachts: **Pamela** (a self-built wooden yacht) and **Lyyli** (an Albatross 26).
+A complete Next.js 16 content management system for tracking and sharing stories about two beautiful sailing yachts: **Pamela** (a self-built wooden yacht) and **Lyyli** (an Albatross 26).
 
 ## Features
 
