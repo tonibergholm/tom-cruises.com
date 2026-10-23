@@ -20,6 +20,6 @@ jobs:
             set -e
             cd /home/toni/apps/tom-cruises
             git pull https://github.com/tonibergholm/tom-cruises.com.git main
-            npm ci --omit=dev
+            npm ci
             NEXT_PUBLIC_BUILD_SHA=$(git rev-parse --short HEAD) npm run build
             pm2 reload tom-cruises --update-env
